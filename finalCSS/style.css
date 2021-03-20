@@ -1,0 +1,45 @@
+html{
+    height: 100%;
+}
+body {
+    height: 100%;
+    background-color: rgb(226, 229, 235);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+#container{
+    background-color: cornsilk;
+    width: 500px;
+    min-height: 200px;
+    border-radius: 22px;
+    box-shadow: 0px 20px 20px 0px rgb(66, 53, 53);
+    padding:2.5rem;
+    text-align: center;
+}
+
+.down-image{
+    height: 8rem;
+}
+
+#down-container{
+    margin-bottom: 0;
+}
+
+#down-button{
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 8px 40px;
+    margin-top: 15px;
+    background-color: rgb(15, 168, 41);
+    text-decoration: none;
+    color: cornsilk;
+    transition: all .5s ;
+}
+
+#down-button:hover{
+    background-color: rgb(106, 235, 127);
+}

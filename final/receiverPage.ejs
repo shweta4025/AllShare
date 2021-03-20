@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL SHARE</title>
+    <link rel="stylesheet" href ="/style.css">
+
+</head>
+<body>
+    <section id="container">
+       <img class="down-image" src="https://3.bp.blogspot.com/-J7-x3Rm8tmo/XQKlZ6IftDI/AAAAAAAAJow/xyft4pl11SoIwe-whGYxIpEuxXXynoFuQCK4BGAYYCw/s1600/download%2Bbuttons%2Bcolors.png" alt="download-icon">
+        <% if(locals.error){ %>
+        <h4><%= locals.error %>OOPS</h4>
+       <% } else{ %>
+        <h2>THE FILE IS ALL SET TO DOWNLOAD</h2>
+        <p>This link will expire in 24 hrs</p>
+        <div id="down-container">
+             <h3><%= fileName %></h3>
+             <h2><%= parseInt(fileSize/1000) %> kb</h2>
+        </div>
+        <div id="down-button">
+            <a href="<%= downloadLink %>">Download</a>
+        </div>
+    <% } %>
+</section>
+</body>
+</html>
