@@ -17,7 +17,8 @@ mongoConnect();
 
 //cors
 const corsOption = {
-       origin: 'http//localhost:3000'
+       origin: 'http://localhost:3000'
+
 }
 app.use(cors(corsOption));
 
